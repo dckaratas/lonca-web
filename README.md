@@ -3,7 +3,7 @@
 Maceracılar loncasının görev panosu. Lonca ustası yeni görev ilanları asar, görevleri maceracılara atar,
 önceliklerini (S/A/B/C rütbesi) belirler ve görevleri *Açık → Sürüyor → Tamamlandı* sütunları arasında taşır.
 
-🔗 **Canlı demo:** <!-- TODO: Netlify linki -->
+🔗 **Canlı demo:** https://lonca-web.netlify.app
 
 ![Ekran görüntüsü](docs/screenshot.png)
 
