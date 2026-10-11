@@ -25,7 +25,7 @@ Maceracılar loncasının görev panosu. Lonca ustası yeni görev ilanları asa
 ## Kurulum
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/dckaratas/lonca-web.git
 cd lonca-web
 npm install
 npm run dev
