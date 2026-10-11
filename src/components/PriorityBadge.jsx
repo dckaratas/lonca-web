@@ -9,10 +9,11 @@ const STYLES = {
 
 /** Önceliği lonca rütbesi harfiyle (S/A/B/C) gösterir. */
 export default function PriorityBadge({ priority }) {
-  const { rank, label } = PRIORITIES.find((p) => p.value === priority)
+  // Tanımsız bir öncelik gelirse (ör. elle değiştirilmiş LocalStorage) "Orta" gösterilir
+  const { value, rank, label } = PRIORITIES.find((p) => p.value === priority) ?? PRIORITIES[2]
   return (
     <span
-      className={`inline-flex size-9 shrink-0 items-center justify-center rounded-full border font-display text-base font-semibold ${STYLES[priority]}`}
+      className={`inline-flex size-9 shrink-0 items-center justify-center rounded-full border font-display text-base font-semibold ${STYLES[value]}`}
       title={`${rank} rütbesi — ${label} öncelik`}
     >
       {rank}

@@ -13,8 +13,8 @@ export const usingApi = Boolean(API_URL)
 // ---------- LocalStorage ----------
 function load() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY)
-    if (raw) return JSON.parse(raw)
+    const tasks = JSON.parse(localStorage.getItem(STORAGE_KEY))
+    if (Array.isArray(tasks)) return tasks
   } catch {
     // bozuk veri veya erişim engeli: başlangıç verisine dön
   }
